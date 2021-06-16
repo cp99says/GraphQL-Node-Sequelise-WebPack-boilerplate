@@ -22,7 +22,6 @@ export const resolvers = {
     filesDataAPI: async () => {
       const a = await db.files.findAll({
         raw: true,
-        nest: true,
       });
       return a;
     },
